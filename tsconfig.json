@@ -11,8 +11,8 @@
     // "disableReferencedProjectLoad": true,             /* 减少 TypeScript 自动加载的项目数。 */
 
     /* 语言和环境 */
-    "target": "es5",                                     /* 为发出的 JavaScript 设置 JavaScript 语言版本并包含兼容的库声明。 */
-    "lib": ["DOM", "es6"],                                        /* 指定一组描述目标运行时环境的捆绑库声明文件。 */
+    "target": "es5" /* 为发出的 JavaScript 设置 JavaScript 语言版本并包含兼容的库声明。 */,
+    "lib": ["DOM", "es6"] /* 指定一组描述目标运行时环境的捆绑库声明文件。 */,
     // "jsx": "preserve",                                /* 指定生成的 JSX 代码。 */
     // "experimentalDecorators": true,                   /* 为 TC39 暂存 2 草稿修饰器启用实验性支持。 */
     // "emitDecoratorMetadata": true,                    /* 为源文件中的修饰声明发出设计类型元数据。 */
@@ -24,14 +24,14 @@
     // "useDefineForClassFields": true,                  /* 发出符合 ECMAScript 标准的类字段。 */
 
     /* 模块 */
-    "module": "commonjs",                                /* 指定生成的模块代码。 */
+    "module": "esnext" /* 指定生成的模块代码。 */,
     // "rootDir": "./",                                  /* 指定源文件中的根文件夹。 */
-    // "moduleResolution": "node",                       /* 指定 TypeScript 如何从给定的模块说明符查找文件。 */
+    "moduleResolution": "node" /* 指定 TypeScript 如何从给定的模块说明符查找文件。 */,
     // "baseUrl": "./",                                  /* 指定基目录以解析非相关模块名称。 */
     // "paths": {},                                      /* 指定一组将导入重新映射到其他查找位置的条目。 */
     // "rootDirs": [],                                   /* 允许在解析模块时将多个文件夹视为一个文件夹。 */
     // "typeRoots": [],                                  /* 指定多个行为类似 “./node_modules/@types” 的文件夹。 */
-    "types": ["Jest"],                                      /* 指定要包含的类型包名称，而无需在源文件中引用。 */
+    "types": ["Jest"] /* 指定要包含的类型包名称，而无需在源文件中引用。 */,
     // "allowUmdGlobalAccess": true,                     /* 允许从模块访问 UMD 变量全局。 */
     // "resolveJsonModule": true,                        /* 启用导入 .json 文件 */
     // "noResolve": true,                                /* 禁止 “import”、“require” 或 “<引用>” 扩展 TypeScript 应添加到项目的文件数。 */
@@ -68,13 +68,13 @@
     /* 互操作约束 */
     // "isolatedModules": true,                          /* 确保可以安全地转译每个文件，而无需依赖其他导入。 */
     // "allowSyntheticDefaultImports": true,             /* 当模块没有默认导出时，允许“从 y 导入 x”。 */
-    "esModuleInterop": true,                             /* 发出其他 JavaScript 以便支持导入 CommonJS 模块。这将启用 “allowSyntheticDefaultImports” 以实现类型兼容性。 */
+    "esModuleInterop": true /* 发出其他 JavaScript 以便支持导入 CommonJS 模块。这将启用 “allowSyntheticDefaultImports” 以实现类型兼容性。 */,
     // "preserveSymlinks": true,                         /* 禁用将符号链接解析为其实际路径。这会关联到节点中的同一标志。 */
-    "forceConsistentCasingInFileNames": true,            /* 确保导入中的大小写正确。 */
+    "forceConsistentCasingInFileNames": true /* 确保导入中的大小写正确。 */,
 
     /* 类型检查 */
-    "strict": true,                                      /* 启用所有严格类型检查选项。 */
-    "noImplicitAny": false,                            /* 对具有隐式 “any” 类型的表达式和声明启用错误报告。 */
+    "strict": true /* 启用所有严格类型检查选项。 */,
+    "noImplicitAny": false /* 对具有隐式 “any” 类型的表达式和声明启用错误报告。 */,
     // "strictNullChecks": true,                         /* 进行类型检查时，请考虑 “null” 和 “undefined”。 */
     // "strictFunctionTypes": true,                      /* 分配函数时，请检查以确保参数和返回值与子类型兼容。 */
     // "strictBindCallApply": true,                      /* 检查 “bind”、“call” 和 “apply” 方法的参数是否与原始函数匹配。 */
@@ -95,6 +95,6 @@
 
     /* 完成度 */
     // "skipDefaultLibCheck": true,                      /* 跳过 TypeScript 附带的类型检查 .d.ts 文件。 */
-    "skipLibCheck": true                                 /* 跳过对所有 .d.ts 文件的类型检查。 */
+    "skipLibCheck": true /* 跳过对所有 .d.ts 文件的类型检查。 */
   }
 }
