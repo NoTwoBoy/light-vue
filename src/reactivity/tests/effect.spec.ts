@@ -1,5 +1,6 @@
 import { reactive } from "../reactive";
 import { effect, stop } from "../effect";
+import { ref } from "../ref";
 
 describe("effect", () => {
   it("happy path", () => {
@@ -86,5 +87,24 @@ describe("effect", () => {
 
     stop(runner);
     expect(onStop).toBeCalledTimes(1);
+  });
+
+  it("fix depsMap undefined but be called", () => {
+    const foo = reactive({
+      a: 1,
+    });
+
+    const refFoo = ref(0);
+
+    const fn = jest.fn(() => {
+      console.log(refFoo.value);
+    });
+
+    effect(fn);
+
+    foo.a++;
+    refFoo.value++;
+
+    expect(fn).toHaveBeenCalledTimes(2);
   });
 });
